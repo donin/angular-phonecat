@@ -9,8 +9,8 @@ exports.config = {
     'browserName': 'chrome'
   },
 
-  //directConnect: true,
-  seleniumAddress: 'http://localhost:4444/wd/hub',
+  directConnect: true,
+  //seleniumAddress: 'http://localhost:4444/wd/hub',
 
   baseUrl: 'http://localhost:8000/',
 
