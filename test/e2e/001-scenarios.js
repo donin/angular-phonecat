@@ -8,4 +8,9 @@ describe('my app', function() {
     browser.get('app/index.html');
   });
 
+  
+  it('should open homepage',function(){
+    expect(browser.getCurrentUrl()).toMatch('app/index.html');
+  });
+ 
 });
