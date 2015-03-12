@@ -21,5 +21,9 @@
 
   <p>Total number of phones: {{phones.length}}</p>
 
+  <table border="1">
+    <tr><th>row number</th></tr>
+    <tr ng-repeat="i in [0,1,2,3]"><td ng-repeat="x in [0,1,2,3]">{{i+1}}/{{x+1}}</td></tr>
+  </table>
 </body>
 </html>
