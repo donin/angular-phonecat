@@ -51,6 +51,15 @@ describe('PhoneCat App', function() {
         "MOTOROLA XOOM\u2122",
         "Motorola XOOM\u2122 with Wi-Fi"
       ]);
+
+      query.clear();
+      element(by.model('orderProp')).element(by.css('option[value="-age"]')).click();
+
+      expect(getNames()).toEqual([
+        "MOTOROLA XOOM\u2122",
+        "Motorola XOOM\u2122 with Wi-Fi",
+        "Nexus S"
+      ]);
     });
   });
 });
